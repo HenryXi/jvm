@@ -1,1 +1,1 @@
-# virtual machine
+# Java virtual machine
