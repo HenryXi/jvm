@@ -2,6 +2,7 @@ package com.henryxi.jvm;
 
 /**
  * -Xss2M
+ * ? can not make OutOfMemoryError:unable to create new native thread
  */
 public class JavaVMStackOOM {
     private void neverStop() {
