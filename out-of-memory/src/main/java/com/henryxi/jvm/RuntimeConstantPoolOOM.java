@@ -10,7 +10,7 @@ import java.util.List;
 public class RuntimeConstantPoolOOM {
     public static void main(String[] args) {
         // use list contain constant pool reference. avoid full GC collection constant pool
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<String>();
         // 10M PermSize is enough for generate OOM
         int i =0;
         while(true){
