@@ -4,12 +4,14 @@ This error means there is not enough memory to run your application. What you ne
 key question is there are a lot of arguments for java which is right?
 
 **short answer**
+
 Add arguments like following. The value of `PermSize` you can tune by your own environment.
 ```ini
 -XX:PermSize=60M -XX:PermMaxSize=512M
 ```
    
 **long answer**
+
 You've seen this error before: `java.lang.OutOfMemoryError: PermGen space` and you know how to solve it. Just increase
 the value of `PermSize`. I write a simple example to help me understand this error.
 ```java
@@ -36,6 +38,14 @@ public class JavaMethodAreaOOM {
         }
     }
 }
+```
+Use cglib to generate class you need add the dependence, the pom file like following.
+```xml
+<dependency>
+    <groupId>cglib</groupId>
+    <artifactId>cglib</artifactId>
+    <version>2.2.2</version>
+</dependency>
 ```
 Add the arguments `-XX:PermSize=10M -XX:PermMaxSize=10M` before run this example. I run this example in different jdk and
 get different result.
