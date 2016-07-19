@@ -1,4 +1,4 @@
-package com.henryxi.jvm;
+package com.henryxi.jvm.outofmemory;
 
 /**
  * -Xss2M

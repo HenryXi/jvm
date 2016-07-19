@@ -1,4 +1,4 @@
-package com.henryxi.jvm;
+package com.henryxi.jvm.outofmemory;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;

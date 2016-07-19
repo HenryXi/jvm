@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>out-of-memory</module>
+        <module>gc</module>
     </modules>
     <packaging>pom</packaging>
     <!--<build>-->
