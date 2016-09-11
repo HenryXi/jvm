@@ -8,8 +8,8 @@
     <artifactId>jvm</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>out-of-memory</module>
-        <module>gc</module>
+        <module>jvm-gc</module>
+        <module>jvm-oom</module>
     </modules>
     <packaging>pom</packaging>
     <!--<build>-->
