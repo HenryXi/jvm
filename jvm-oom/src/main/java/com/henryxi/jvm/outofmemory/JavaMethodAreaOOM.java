@@ -7,7 +7,7 @@ import net.sf.cglib.proxy.MethodProxy;
 import java.lang.reflect.Method;
 
 /**
- * -XX:PermSize=10M -XX:PermMaxSize=10M
+ * -XX:PermSize=10M -XX:MaxPermSize=10M
  * get "java.lang.OutOfMemoryError: PermGen space" in jdk6
  * won't get "java.lang.OutOfMemoryError:PermGen space" in jdk7 let alone jdk8
  * the error in jdk7 is following

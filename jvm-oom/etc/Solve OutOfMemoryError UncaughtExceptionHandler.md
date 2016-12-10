@@ -7,7 +7,7 @@ key question is there are a lot of arguments for java which is right?
 
 Add arguments like following. The value of `PermSize` you can tune by your own environment.
 ```ini
--XX:PermSize=60M -XX:PermMaxSize=512M
+-XX:PermSize=60M -XX:MaxPermSize=512M
 ```
    
 **long answer**
@@ -16,7 +16,7 @@ You've seen this error before: `java.lang.OutOfMemoryError: PermGen space` and y
 the value of `PermSize`. I write a simple example to help me understand this error.
 ```java
 /**
- * -XX:PermSize=10M -XX:PermMaxSize=10M
+ * -XX:PermSize=10M -XX:MaxPermSize=10M
  */
 public class JavaMethodAreaOOM {
     static class OOMObject {
@@ -47,7 +47,7 @@ Use cglib to generate class you need add the dependence, the pom file like follo
     <version>2.2.2</version>
 </dependency>
 ```
-Add the arguments `-XX:PermSize=10M -XX:PermMaxSize=10M` before run this example. I run this example in different jdk and
+Add the arguments `-XX:PermSize=10M -XX:MaxPermSize=10M` before run this example. I run this example in different jdk and
 get different result.
 
 * jdk6
