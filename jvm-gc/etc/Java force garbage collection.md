@@ -16,9 +16,9 @@ Use `jstat -gcutil 122329 2000` to monitor the GC. In my environment, the output
  10.70   0.00  59.00  34.28  61.30    924    8.625     0    0.000    8.625
  10.70   0.00  78.74  34.28  61.30    924    8.625     0    0.000    8.625
  10.70   0.00  99.13  34.28  61.30    924    8.625     0    0.000    8.625
-  0.00  17.39  15.74  34.29  61.30    925    8.634     0    0.000    8.634 <-- execute "jmap -histo:live 122329 > /tmp/testFullGC.txt"
+  0.00  17.39  15.74  34.29  61.30    925    8.634     0    0.000    8.634
   0.00  17.39  30.95  34.29  61.30    925    8.634     0    0.000    8.634
-  0.00   0.00   6.07   6.23  60.97    926    8.644     1    0.453    9.097
+  0.00   0.00   6.07   6.23  60.97    926    8.644     1    0.453    9.097 <-- execute "jmap -histo:live 122329 > /tmp/testFullGC.txt"
   0.00   0.00  23.72   6.23  60.97    926    8.644     1    0.453    9.097
   0.00   0.00  43.61   6.23  60.97    926    8.644     1    0.453    9.097
   0.00   0.00  59.87   6.23  60.97    926    8.644     1    0.453    9.097
@@ -26,4 +26,4 @@ Use `jstat -gcutil 122329 2000` to monitor the GC. In my environment, the output
   0.00   0.00  95.96   6.23  60.97    926    8.644     1    0.453    9.097
 ```
 
-Use `jmap -histo:live 122329 > /tmp/testFullGC.txt` to force JVM do full GC. In the line 5, JVM do a full GC.
+Use `jmap -histo:live 122329 > /tmp/testFullGC.txt` to force JVM do full GC. In the line 7, JVM do a full GC.
