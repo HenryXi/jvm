@@ -8,6 +8,7 @@ jmap -dump,format=b,file=/tmp/dump_file.hprof
 
 
 **dump live objects in heap**
+
 If you want only dump live objects, use following command.
 ```bash
 jmap -dump:live,format=b,file=/tmp/dump_file.hprof
