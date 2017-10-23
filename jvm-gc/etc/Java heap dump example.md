@@ -3,7 +3,7 @@ We use `jmap` command to dump the Java heap. Examples are here.
 
 **dump all objects in heap**
 ```bash
-jmap -dump,format=b,file=/tmp/dump_file.hprof
+jmap -dump:format=b,file=/tmp/dump_file.hprof
 ```
 
 
