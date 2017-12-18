@@ -10,6 +10,7 @@
     <modules>
         <module>jvm-gc</module>
         <module>jvm-oom</module>
+        <module>jvm-tool</module>
     </modules>
     <packaging>pom</packaging>
     <!--<build>-->
