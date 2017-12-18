@@ -53,16 +53,6 @@ printf 0x%x 32036 # will get 0x7d24
 
 5. Use `vi` to find thread id(0x7d24) in jstack file.
 ```
-"epollEventLoopGroup-3-1" #96 prio=10 os_prio=0 tid=0x00007f04c000d000 nid=0x7d25 runnable [0x00007f02f8f25000]
-   java.lang.Thread.State: RUNNABLE
-    at io.netty.channel.epoll.Native.epollWait0(Native Method)
-    at io.netty.channel.epoll.Native.epollWait(Native.java:93)
-    at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:185)
-    at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:210)
-    at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112)
-    at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137)
-    at java.lang.Thread.run(Thread.java:745)
-
 "pool-2-thread-1" #274 prio=5 os_prio=0 tid=0x00007f042c128000 nid=0x7d24 waiting on condition [0x00007f02f8fa6000]
    java.lang.Thread.State: WAITING (parking)
     at sun.misc.Unsafe.park(Native Method)
