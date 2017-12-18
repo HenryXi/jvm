@@ -79,7 +79,7 @@ printf 0x%x 32036 # will get 0x7d24
 
 **Summary**
 
-find high CPU process id -> get jstack output file -> get high thread id -> find java code in jstack output file
+find high CPU process id -> get jstack output file -> get high thread id -> get hexadecimal nid(thread id) -> find java code in jstack output file
 
 
 EOF 
